@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+.pnpm-debug.log*
+
+# Build outputs
+dist/
+*.tsbuildinfo
+
+# Test coverage
+coverage/
+
+# Environment
+.env*
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# Generated files
+**/.vite/
+**/dist/
