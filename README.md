@@ -1,5 +1,183 @@
 # vite-plugin-html-srcset
 
+
+🎉 Vite Plugin HTML Srcset  
+============================================================
+📁 Total files: 180
+📦 Total size: 159.2 KB
+🗜️  Archive: \tmp\vite-plugin-html-srcset.zip
+📊 Archive size: 113.5 KB
+
+📋 File Breakdown:
+  .avif          7 files
+  .css           2 files
+  .html          7 files
+  .jpg          16 files
+  .js            3 files
+  .json          5 files
+  .md            3 files
+  .png          11 files
+  .sample       14 files
+  .svg           3 files
+  .ts           11 files
+  .webp         12 files
+  .yaml          1 files
+  no extension  85 files
+
+🏗️  Project Structure:
+├── .git/
+│   ├── hooks/
+│   │   ├── applypatch-msg.sample
+│   │   ├── commit-msg.sample
+│   │   ├── fsmonitor-watchman.sample
+│   │   ├── post-update.sample
+│   │   ├── pre-applypatch.sample
+│   │   ├── pre-commit.sample
+│   │   ├── pre-merge-commit.sample
+│   │   ├── pre-push.sample
+│   │   ├── pre-rebase.sample
+│   │   ├── pre-receive.sample
+│   │   ├── prepare-commit-msg.sample
+│   │   ├── push-to-checkout.sample
+│   │   ├── sendemail-validate.sample
+│   │   └── update.sample
+│   ├── info/
+│   │   └── exclude
+│   ├── logs/
+│   │   ├── refs/
+│   │   └── HEAD
+│   ├── objects/
+│   │   ├── 01/
+│   │   ├── 04/
+│   │   ├── 0a/
+│   │   ├── 0d/
+│   │   ├── 0f/
+│   │   ├── 15/
+│   │   ├── 17/
+│   │   ├── 19/
+│   │   ├── 23/
+│   │   ├── 28/
+│   │   ├── 2d/
+│   │   ├── 39/
+│   │   ├── 3c/
+│   │   ├── 45/
+│   │   ├── 46/
+│   │   ├── 4b/
+│   │   ├── 4c/
+│   │   ├── 4e/
+│   │   ├── 51/
+│   │   ├── 55/
+│   │   ├── 58/
+│   │   ├── 5f/
+│   │   ├── 63/
+│   │   ├── 66/
+│   │   ├── 67/
+│   │   ├── 6a/
+│   │   ├── 6b/
+│   │   ├── 70/
+│   │   ├── 71/
+│   │   ├── 83/
+│   │   ├── 86/
+│   │   ├── 88/
+│   │   ├── 94/
+│   │   ├── 96/
+│   │   ├── 98/
+│   │   ├── 9b/
+│   │   ├── 9e/
+│   │   ├── a1/
+│   │   ├── af/
+│   │   ├── bb/
+│   │   ├── bf/
+│   │   ├── c3/
+│   │   ├── c9/
+│   │   ├── ce/
+│   │   ├── cf/
+│   │   ├── d2/
+│   │   ├── d9/
+│   │   ├── e9/
+│   │   ├── eb/
+│   │   ├── ef/
+│   │   ├── f3/
+│   │   ├── f7/
+│   │   ├── f9/
+│   │   ├── fa/
+│   │   ├── fc/
+│   │   ├── fe/
+│   │   ├── info/
+│   │   └── pack/
+│   ├── refs/
+│   │   ├── heads/
+│   │   ├── remotes/
+│   │   └── tags/
+│   ├── COMMIT_EDITMSG
+│   ├── config
+│   ├── description
+│   ├── FETCH_HEAD
+│   ├── HEAD
+│   ├── index
+│   └── ORIG_HEAD
+├── docs/
+│   ├── api.md
+│   └── contributing.md
+├── examples/
+│   ├── advanced/
+│   │   ├── public/
+│   │   ├── about.html
+│   │   ├── index.html
+│   │   ├── package.json
+│   │   ├── products.html
+│   │   ├── styles.css
+│   │   └── vite.config.js
+│   └── basic/
+│       ├── public/
+│       ├── index.html
+│       ├── package.json
+│       └── vite.config.js
+├── playground/
+│   ├── public/
+│   │   └── images/
+│   ├── blog.html
+│   ├── gallery.html
+│   ├── index.html
+│   ├── package.json
+│   ├── style.css
+│   └── vite.config.js
+├── src/
+│   ├── image-processor.ts
+│   ├── index.ts
+│   ├── plugin.ts
+│   └── types.ts
+├── test/
+│   ├── image-processor.test.ts
+│   ├── integration.test.ts
+│   ├── plugin.test.ts
+│   └── types.test.ts
+├── .gitignore
+├── client.d.ts
+├── package.json
+├── pnpm-workspace.yaml
+├── README.md
+├── tsconfig.json
+├── tsup.config.ts
+└── vitest.config.ts
+
+✅ Key Features Implemented:
+  ✨ Complete Vite 7 plugin with TypeScript
+  🖼️  HTML processing for img, picture, and figure tags
+  📱 Responsive image generation with Sharp
+  🎨 Multiple format support (PNG, WebP, AVIF, JPEG)
+  ⚙️  Configurable options and settings
+  🧪 Comprehensive test suite with Vitest
+  📊 V8 coverage reporting
+  🎮 Interactive playground
+  📚 Basic and advanced examples
+  📖 Complete documentation
+  🏗️  Monorepo structure with pnpm
+  🎯 TypeScript definitions
+  🔧 Build configuration with tsup
+
+💾 Archive created: \tmp\vite-plugin-html-srcset.zip
+
 A Vite 7 plugin that automatically processes HTML files and transforms `<img>`, `<picture>`, and `<figure>` tags with srcset attributes for responsive images.
 
 ## Features
@@ -11,6 +189,7 @@ A Vite 7 plugin that automatically processes HTML files and transforms `<img>`, 
 - 🔧 **Configurable**: Flexible configuration options
 - 📋 **Full Coverage**: Comprehensive test suite with Vitest and V8 coverage
 - 🎮 **Playground**: Interactive examples and demos
+
 
 ## Installation
 
