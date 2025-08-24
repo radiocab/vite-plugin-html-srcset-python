@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite Plugin HTML Srcset - Playground</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Vite Plugin HTML Srcset Playground</h1>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/gallery.html">Gallery</a>
+                <a href="/blog.html">Blog</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h2>Responsive Images Made Easy</h2>
+                <p>This playground demonstrates the vite-plugin-html-srcset in action.</p>
+                
+                <!-- Basic img tag with srcset -->
+                <img 
+                    src="/images/hero.jpg?srcset" 
+                    alt="Hero image showcasing responsive design"
+                    class="hero-image"
+                />
+            </section>
+
+            <section class="features">
+                <h2>Features</h2>
+                
+                <div class="feature-grid">
+                    <div class="feature">
+                        <figure>
+                            <img 
+                                src="/images/feature1.png?srcset" 
+                                alt="Automatic image generation feature"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            />
+                            <figcaption>Automatic Generation</figcaption>
+                        </figure>
+                        <p>Automatically generates multiple image sizes and formats</p>
+                    </div>
+
+                    <div class="feature">
+                        <figure>
+                            <img 
+                                src="/images/feature2.jpg?srcset" 
+                                alt="Multiple format support feature"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            />
+                            <figcaption>Multiple Formats</figcaption>
+                        </figure>
+                        <p>Supports WebP, AVIF, PNG, and JPEG formats</p>
+                    </div>
+
+                    <div class="feature">
+                        <figure>
+                            <img 
+                                src="/images/feature3.webp?srcset" 
+                                alt="Performance optimization feature"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            />
+                            <figcaption>Performance Optimized</figcaption>
+                        </figure>
+                        <p>Optimized for performance with configurable quality settings</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="picture-example">
+                <h2>Picture Element Example</h2>
+                <picture>
+                    <source srcset="/images/modern-art.avif?srcset" type="image/avif">
+                    <source srcset="/images/modern-art.webp?srcset" type="image/webp">
+                    <img 
+                        src="/images/modern-art.jpg?srcset" 
+                        alt="Modern art demonstration of picture element"
+                        class="picture-demo"
+                    />
+                </picture>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Vite Plugin HTML Srcset. Built with ❤️ and Vite.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Vite Plugin HTML Srcset</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Image Gallery</h1>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/gallery.html">Gallery</a>
+                <a href="/blog.html">Blog</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="gallery">
+                <h2>Responsive Image Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img 
+                            src="/images/gallery/photo1.jpg?srcset" 
+                            alt="Beautiful landscape photography"
+                            sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+                        />
+                    </div>
+                    <div class="gallery-item">
+                        <img 
+                            src="/images/gallery/photo2.png?srcset" 
+                            alt="Urban architecture photography"
+                            sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+                        />
+                    </div>
+                    <div class="gallery-item">
+                        <img 
+                            src="/images/gallery/photo3.webp?srcset" 
+                            alt="Nature macro photography"
+                            sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+                        />
+                    </div>
+                    <div class="gallery-item">
+                        <figure>
+                            <img 
+                                src="/images/gallery/photo4.jpg?srcset" 
+                                alt="Portrait photography"
+                                sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+                            />
+                            <figcaption>Professional Portrait</figcaption>
+                        </figure>
+                    </div>
+                    <div class="gallery-item">
+                        <picture>
+                            <source srcset="/images/gallery/photo5.avif?srcset" type="image/avif">
+                            <source srcset="/images/gallery/photo5.webp?srcset" type="image/webp">
+                            <img 
+                                src="/images/gallery/photo5.jpg?srcset" 
+                                alt="Artistic photography with modern formats"
+                                sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+                            />
+                        </picture>
+                    </div>
+                    <div class="gallery-item">
+                        <img 
+                            src="/images/gallery/photo6.png?srcset" 
+                            alt="Digital art illustration"
+                            sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+                        />
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Vite Plugin HTML Srcset. Built with ❤️ and Vite.</p>
+        </footer>
+    </div>
+</body>
+</html>

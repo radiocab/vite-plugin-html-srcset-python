@@ -30,10 +30,11 @@
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
     "test:ui": "vitest --ui",
-    "playground": "cd playground && npm run dev",
-    "example:basic": "cd examples/basic && npm run dev",
-    "example:advanced": "cd examples/advanced && npm run dev",
-    "build:examples": "cd examples && npm run build:all"
+    "playground": "cd playground && pnpm run dev",
+    "example:basic": "cd examples/basic && pnpm run dev",
+    "example:advanced": "cd examples/advanced && pnpm run dev",
+    "build:examples": "cd examples && pnpm run -r build",
+    "publish:release": "pnpm build && pnpm publish"
   },
   "peerDependencies": {
     "vite": "^7.0.0"
@@ -54,5 +55,6 @@
   },
   "engines": {
     "node": ">=18.0.0"
-  }
+  },
+  "packageManager": "pnpm@8.0.0"
 }

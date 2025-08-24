@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Vite Plugin HTML Srcset</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Blog</h1>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/gallery.html">Gallery</a>
+                <a href="/blog.html">Blog</a>
+            </nav>
+        </header>
+
+        <main>
+            <article class="blog-post">
+                <header class="post-header">
+                    <h1>How to Use Vite Plugin HTML Srcset</h1>
+                    <p class="post-meta">Published on <time>January 1, 2024</time></p>
+                    <img 
+                        src="/images/blog/featured-image.jpg?srcset" 
+                        alt="Featured image for blog post about responsive images"
+                        class="featured-image"
+                        sizes="(max-width: 768px) 100vw, 70vw"
+                    />
+                </header>
+
+                <div class="post-content">
+                    <h2>Introduction</h2>
+                    <p>
+                        Responsive images are crucial for modern web development. This plugin makes it 
+                        easy to generate multiple image sizes and formats automatically during your Vite build process.
+                    </p>
+
+                    <figure class="inline-figure">
+                        <img 
+                            src="/images/blog/example-before-after.png?srcset" 
+                            alt="Before and after comparison showing image optimization"
+                            sizes="(max-width: 768px) 100vw, 60vw"
+                        />
+                        <figcaption>Before and after optimization comparison</figcaption>
+                    </figure>
+
+                    <h2>Getting Started</h2>
+                    <p>
+                        Simply add <code>?srcset</code> to any image src attribute, and the plugin will 
+                        handle the rest during build time.
+                    </p>
+
+                    <picture class="code-example">
+                        <source srcset="/images/blog/code-example.avif?srcset" type="image/avif">
+                        <source srcset="/images/blog/code-example.webp?srcset" type="image/webp">
+                        <img 
+                            src="/images/blog/code-example.png?srcset" 
+                            alt="Code example showing plugin usage"
+                            sizes="(max-width: 768px) 100vw, 80vw"
+                        />
+                    </picture>
+
+                    <h2>Advanced Features</h2>
+                    <p>The plugin supports advanced features like custom widths, quality settings, and format selection.</p>
+                    
+                    <div class="feature-showcase">
+                        <img 
+                            src="/images/blog/performance-chart.svg?srcset" 
+                            alt="Performance improvement chart"
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                        />
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Vite Plugin HTML Srcset. Built with ❤️ and Vite.</p>
+        </footer>
+    </div>
+</body>
+</html>
