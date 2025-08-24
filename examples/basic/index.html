@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Example - Vite Plugin HTML Srcset</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .example {
+            margin: 2rem 0;
+            padding: 1rem;
+            border-left: 4px solid #007bff;
+            background: #f8f9fa;
+        }
+        
+        code {
+            background: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Basic Example - Vite Plugin HTML Srcset</h1>
+    
+    <p>This example demonstrates the basic usage of vite-plugin-html-srcset.</p>
+    
+    <div class="example">
+        <h2>Simple Image with Srcset</h2>
+        <p>Just add <code>?srcset</code> to any image src attribute:</p>
+        <img 
+            src="/sample-image.jpg?srcset" 
+            alt="Sample image demonstrating basic srcset functionality"
+        />
+        <p><small>This image will be automatically processed to generate multiple sizes and WebP format.</small></p>
+    </div>
+    
+    <div class="example">
+        <h2>Image with Custom Sizes</h2>
+        <p>You can also specify custom sizes attribute:</p>
+        <img 
+            src="/landscape.png?srcset" 
+            alt="Landscape image with custom sizes"
+            sizes="(max-width: 480px) 100vw, (max-width: 768px) 80vw, 60vw"
+        />
+    </div>
+    
+    <div class="example">
+        <h2>Figure with Image</h2>
+        <figure>
+            <img 
+                src="/portrait.jpg?srcset" 
+                alt="Portrait image in a figure element"
+            />
+            <figcaption>This image is inside a figure element and will still be processed.</figcaption>
+        </figure>
+    </div>
+    
+    <h2>How It Works</h2>
+    <ol>
+        <li>Add <code>?srcset</code> to any image src attribute</li>
+        <li>Run <code>pnpm run build</code></li>
+        <li>The plugin automatically generates multiple image sizes and formats</li>
+        <li>The HTML is updated with proper srcset attributes</li>
+    </ol>
+    
+    <p>Check the network tab in your browser's developer tools to see the optimized images being served!</p>
+</body>
+</html>

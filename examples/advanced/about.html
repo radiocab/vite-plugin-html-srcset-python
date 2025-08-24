@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Advanced Example</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>About</h1>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/products.html">Products</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="about-content">
+                <h2>About This Plugin</h2>
+                <div class="content-with-image">
+                    <div class="text-content">
+                        <p>
+                            The vite-plugin-html-srcset automatically generates responsive images 
+                            during your build process, making it easy to deliver optimized images 
+                            to users across all devices.
+                        </p>
+                        <p>
+                            This plugin supports multiple image formats including AVIF, WebP, PNG, 
+                            and JPEG, and can generate images at various sizes to ensure optimal 
+                            loading performance.
+                        </p>
+                    </div>
+                    <div class="image-content">
+                        <figure>
+                            <img 
+                                src="/images/about-illustration.svg?srcset" 
+                                alt="Illustration showing responsive image concepts"
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                            />
+                            <figcaption>Responsive images adapt to different screen sizes</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section class="technical-details">
+                <h2>Technical Features</h2>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <img 
+                            src="/images/icons/performance.png?srcset" 
+                            alt="Performance icon"
+                            sizes="80px"
+                        />
+                        <h3>High Performance</h3>
+                        <p>Optimized image delivery reduces bandwidth usage and improves load times.</p>
+                    </div>
+                    <div class="feature-item">
+                        <img 
+                            src="/images/icons/formats.jpg?srcset" 
+                            alt="Multiple formats icon"
+                            sizes="80px"
+                        />
+                        <h3>Multiple Formats</h3>
+                        <p>Supports modern formats like AVIF and WebP with intelligent fallbacks.</p>
+                    </div>
+                    <div class="feature-item">
+                        <img 
+                            src="/images/icons/responsive.webp?srcset" 
+                            alt="Responsive design icon"
+                            sizes="80px"
+                        />
+                        <h3>Fully Responsive</h3>
+                        <p>Automatic generation of multiple image sizes for different screen densities.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Advanced Example. Powered by vite-plugin-html-srcset.</p>
+        </footer>
+    </div>
+</body>
+</html>

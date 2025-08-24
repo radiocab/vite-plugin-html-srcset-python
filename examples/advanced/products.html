@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Advanced Example</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Products</h1>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/products.html">Products</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="products-grid">
+                <h2>Our Product Portfolio</h2>
+                
+                <div class="product-grid">
+                    <article class="product-card">
+                        <picture>
+                            <source srcset="/images/products/product1.avif?srcset" type="image/avif">
+                            <source srcset="/images/products/product1.webp?srcset" type="image/webp">
+                            <img 
+                                src="/images/products/product1.jpg?srcset" 
+                                alt="Premium product with modern format support"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            />
+                        </picture>
+                        <div class="product-info">
+                            <h3>Premium Product</h3>
+                            <p>High-quality product with excellent features and modern image optimization.</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img 
+                            src="/images/products/product2.png?srcset" 
+                            alt="Standard product with PNG transparency"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        />
+                        <div class="product-info">
+                            <h3>Standard Product</h3>
+                            <p>Reliable product with PNG transparency support and responsive images.</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <figure>
+                            <img 
+                                src="/images/products/product3.webp?srcset" 
+                                alt="Eco-friendly product with sustainable packaging"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            />
+                            <figcaption>Eco-Friendly Option</figcaption>
+                        </figure>
+                        <div class="product-info">
+                            <h3>Eco Product</h3>
+                            <p>Environmentally conscious product with WebP optimization.</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img 
+                            src="/images/products/product4.jpg?srcset" 
+                            alt="Budget-friendly product with JPEG optimization"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        />
+                        <div class="product-info">
+                            <h3>Budget Product</h3>
+                            <p>Affordable option with optimized JPEG compression.</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <picture>
+                            <source srcset="/images/products/product5.avif?srcset" type="image/avif">
+                            <source srcset="/images/products/product5.webp?srcset" type="image/webp">
+                            <img 
+                                src="/images/products/product5.png?srcset" 
+                                alt="Luxury product with full format support"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            />
+                        </picture>
+                        <div class="product-info">
+                            <h3>Luxury Product</h3>
+                            <p>Premium luxury item with complete format support and optimization.</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img 
+                            src="/images/products/product6.svg?srcset" 
+                            alt="Digital product with SVG graphics"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        />
+                        <div class="product-info">
+                            <h3>Digital Product</h3>
+                            <p>Digital solution with scalable vector graphics and srcset optimization.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Advanced Example. Powered by vite-plugin-html-srcset.</p>
+        </footer>
+    </div>
+</body>
+</html>

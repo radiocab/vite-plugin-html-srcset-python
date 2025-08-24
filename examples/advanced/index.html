@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Example - Vite Plugin HTML Srcset</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Advanced Example - Vite Plugin HTML Srcset</h1>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/products.html">Products</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h2>Advanced Features Demo</h2>
+                <p>This example showcases advanced features including multiple formats, custom widths, and complex layouts.</p>
+                
+                <!-- Hero image with modern formats -->
+                <picture>
+                    <source srcset="/images/hero-modern.avif?srcset" type="image/avif">
+                    <source srcset="/images/hero-modern.webp?srcset" type="image/webp">
+                    <img 
+                        src="/images/hero-modern.jpg?srcset" 
+                        alt="Modern hero image with AVIF and WebP support"
+                        class="hero-image"
+                        sizes="100vw"
+                    />
+                </picture>
+            </section>
+
+            <section class="grid-gallery">
+                <h2>Responsive Image Grid</h2>
+                <div class="image-grid">
+                    <div class="grid-item large">
+                        <img 
+                            src="/images/featured-large.png?srcset" 
+                            alt="Featured large image"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
+                        />
+                    </div>
+                    <div class="grid-item">
+                        <img 
+                            src="/images/thumbnail1.jpg?srcset" 
+                            alt="Thumbnail 1"
+                            sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 20vw"
+                        />
+                    </div>
+                    <div class="grid-item">
+                        <img 
+                            src="/images/thumbnail2.webp?srcset" 
+                            alt="Thumbnail 2"
+                            sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 20vw"
+                        />
+                    </div>
+                    <div class="grid-item">
+                        <figure>
+                            <img 
+                                src="/images/thumbnail3.png?srcset" 
+                                alt="Thumbnail 3 with caption"
+                                sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 20vw"
+                            />
+                            <figcaption>Captioned Image</figcaption>
+                        </figure>
+                    </div>
+                    <div class="grid-item">
+                        <img 
+                            src="/images/thumbnail4.jpg?srcset" 
+                            alt="Thumbnail 4"
+                            sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 20vw"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <section class="comparison">
+                <h2>Format Comparison</h2>
+                <div class="format-grid">
+                    <div class="format-example">
+                        <h3>AVIF (Best Quality)</h3>
+                        <picture>
+                            <source srcset="/images/comparison.avif?srcset" type="image/avif">
+                            <img 
+                                src="/images/comparison.jpg?srcset" 
+                                alt="Image in AVIF format"
+                            />
+                        </picture>
+                        <p>Modern format with excellent compression</p>
+                    </div>
+                    <div class="format-example">
+                        <h3>WebP (Good Support)</h3>
+                        <picture>
+                            <source srcset="/images/comparison.webp?srcset" type="image/webp">
+                            <img 
+                                src="/images/comparison.jpg?srcset" 
+                                alt="Image in WebP format"
+                            />
+                        </picture>
+                        <p>Widely supported modern format</p>
+                    </div>
+                    <div class="format-example">
+                        <h3>JPEG (Fallback)</h3>
+                        <img 
+                            src="/images/comparison.jpg?srcset" 
+                            alt="Image in JPEG format"
+                        />
+                        <p>Universal fallback format</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Advanced Example. Powered by vite-plugin-html-srcset.</p>
+        </footer>
+    </div>
+</body>
+</html>
